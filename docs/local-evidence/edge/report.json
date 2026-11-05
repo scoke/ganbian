@@ -1,0 +1,357 @@
+{
+  "base": "http://127.0.0.1:8094",
+  "generatedAt": "2026-11-05T21:24:18.968Z",
+  "results": [
+    {
+      "name": "two-page-conflict",
+      "status": "PASS",
+      "evidence": {
+        "first": "page A winner",
+        "second": {
+          "saved": false,
+          "message": "另一页面已修改记录。本页输入仍保留；请先导出或复制输入，再重新载入核对，避免覆盖。"
+        },
+        "record": {
+          "revision": 1,
+          "state": {
+            "version": 1,
+            "draft": {
+              "spot": "page A winner",
+              "flow": "未记录",
+              "water": "",
+              "rods": [
+                {
+                  "bait": "",
+                  "rig": "",
+                  "interval": ""
+                }
+              ],
+              "batch": {
+                "bait": "",
+                "rig": "",
+                "interval": ""
+              }
+            },
+            "sessions": []
+          }
+        }
+      },
+      "pageErrors": []
+    },
+    {
+      "name": "corrupt-startup-no-overwrite",
+      "status": "PASS",
+      "evidence": {
+        "record": {
+          "revision": 7,
+          "state": {
+            "version": 999,
+            "marker": "preserve-me"
+          }
+        }
+      },
+      "pageErrors": []
+    },
+    {
+      "name": "corrupt-live-record-no-overwrite",
+      "status": "PASS",
+      "evidence": {
+        "save": {
+          "saved": false,
+          "message": "另一页面已修改记录。本页输入仍保留；请先导出或复制输入，再重新载入核对，避免覆盖。"
+        },
+        "record": {
+          "revision": 1,
+          "state": {
+            "version": 999,
+            "marker": "preserve-live-corruption"
+          }
+        }
+      },
+      "pageErrors": []
+    },
+    {
+      "name": "storage-failure-keeps-input",
+      "status": "PASS",
+      "evidence": {
+        "before": null,
+        "toast": "",
+        "after": null
+      },
+      "pageErrors": []
+    },
+    {
+      "name": "overdue-once-reload-rebait",
+      "status": "PASS",
+      "evidence": {
+        "first": {
+          "revision": 2,
+          "state": {
+            "version": 1,
+            "draft": {
+              "spot": "clock edge",
+              "flow": "未记录",
+              "water": "",
+              "rods": [
+                {
+                  "bait": "玉米粒",
+                  "rig": "三叉钩＋浮球",
+                  "interval": "1"
+                }
+              ],
+              "batch": {
+                "bait": "",
+                "rig": "",
+                "interval": ""
+              }
+            },
+            "sessions": [
+              {
+                "id": "clock-case",
+                "startedAt": 1767225600040,
+                "endedAt": null,
+                "plan": {
+                  "spot": "clock edge",
+                  "flow": "未记录",
+                  "water": "",
+                  "rods": [
+                    {
+                      "bait": "玉米粒",
+                      "rig": "三叉钩＋浮球",
+                      "interval": "1"
+                    }
+                  ],
+                  "batch": {
+                    "bait": "",
+                    "rig": "",
+                    "interval": ""
+                  }
+                },
+                "rods": [
+                  {
+                    "bait": "玉米粒",
+                    "rig": "三叉钩＋浮球",
+                    "interval": "1",
+                    "lastBaitAt": 1767225600040,
+                    "remindedDueAt": 1767229200040
+                  }
+                ],
+                "events": [
+                  {
+                    "type": "start",
+                    "at": 1767225600040
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "repeated": {
+          "revision": 2,
+          "state": {
+            "version": 1,
+            "draft": {
+              "spot": "clock edge",
+              "flow": "未记录",
+              "water": "",
+              "rods": [
+                {
+                  "bait": "玉米粒",
+                  "rig": "三叉钩＋浮球",
+                  "interval": "1"
+                }
+              ],
+              "batch": {
+                "bait": "",
+                "rig": "",
+                "interval": ""
+              }
+            },
+            "sessions": [
+              {
+                "id": "clock-case",
+                "startedAt": 1767225600040,
+                "endedAt": null,
+                "plan": {
+                  "spot": "clock edge",
+                  "flow": "未记录",
+                  "water": "",
+                  "rods": [
+                    {
+                      "bait": "玉米粒",
+                      "rig": "三叉钩＋浮球",
+                      "interval": "1"
+                    }
+                  ],
+                  "batch": {
+                    "bait": "",
+                    "rig": "",
+                    "interval": ""
+                  }
+                },
+                "rods": [
+                  {
+                    "bait": "玉米粒",
+                    "rig": "三叉钩＋浮球",
+                    "interval": "1",
+                    "lastBaitAt": 1767225600040,
+                    "remindedDueAt": 1767229200040
+                  }
+                ],
+                "events": [
+                  {
+                    "type": "start",
+                    "at": 1767225600040
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "reloaded": {
+          "revision": 2,
+          "state": {
+            "version": 1,
+            "draft": {
+              "spot": "clock edge",
+              "flow": "未记录",
+              "water": "",
+              "rods": [
+                {
+                  "bait": "玉米粒",
+                  "rig": "三叉钩＋浮球",
+                  "interval": "1"
+                }
+              ],
+              "batch": {
+                "bait": "",
+                "rig": "",
+                "interval": ""
+              }
+            },
+            "sessions": [
+              {
+                "id": "clock-case",
+                "startedAt": 1767225600040,
+                "endedAt": null,
+                "plan": {
+                  "spot": "clock edge",
+                  "flow": "未记录",
+                  "water": "",
+                  "rods": [
+                    {
+                      "bait": "玉米粒",
+                      "rig": "三叉钩＋浮球",
+                      "interval": "1"
+                    }
+                  ],
+                  "batch": {
+                    "bait": "",
+                    "rig": "",
+                    "interval": ""
+                  }
+                },
+                "rods": [
+                  {
+                    "bait": "玉米粒",
+                    "rig": "三叉钩＋浮球",
+                    "interval": "1",
+                    "lastBaitAt": 1767225600040,
+                    "remindedDueAt": 1767229200040
+                  }
+                ],
+                "events": [
+                  {
+                    "type": "start",
+                    "at": 1767225600040
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "rebaited": {
+          "revision": 3,
+          "state": {
+            "version": 1,
+            "draft": {
+              "spot": "clock edge",
+              "flow": "未记录",
+              "water": "",
+              "rods": [
+                {
+                  "bait": "玉米粒",
+                  "rig": "三叉钩＋浮球",
+                  "interval": "1"
+                }
+              ],
+              "batch": {
+                "bait": "",
+                "rig": "",
+                "interval": ""
+              }
+            },
+            "sessions": [
+              {
+                "id": "clock-case",
+                "startedAt": 1767225600040,
+                "endedAt": null,
+                "plan": {
+                  "spot": "clock edge",
+                  "flow": "未记录",
+                  "water": "",
+                  "rods": [
+                    {
+                      "bait": "玉米粒",
+                      "rig": "三叉钩＋浮球",
+                      "interval": "1"
+                    }
+                  ],
+                  "batch": {
+                    "bait": "",
+                    "rig": "",
+                    "interval": ""
+                  }
+                },
+                "rods": [
+                  {
+                    "bait": "玉米粒",
+                    "rig": "三叉钩＋浮球",
+                    "interval": "1",
+                    "lastBaitAt": 1767229206124,
+                    "remindedDueAt": null
+                  }
+                ],
+                "events": [
+                  {
+                    "type": "start",
+                    "at": 1767225600040
+                  },
+                  {
+                    "type": "rebait",
+                    "at": 1767229206124,
+                    "rodIndex": 0
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "pageErrors": []
+    },
+    {
+      "name": "draft-navigation-cancel-and-typing-unload",
+      "status": "PASS",
+      "evidence": {
+        "inputOnlyGuard": true,
+        "navigationDialog": {
+          "type": "confirm",
+          "message": "尚有未保存草稿，离开将放弃本次输入，继续？"
+        },
+        "nativeUnloadType": "beforeunload"
+      },
+      "pageErrors": []
+    }
+  ]
+}
