@@ -1,0 +1,64 @@
+#error {
+  padding: 16px;
+  background: #fff0ec;
+  color: #832b20;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  white-space: pre-wrap;
+}
+.intervals {
+  display: flex;
+  gap: 4px;
+}
+.intervals label {
+  flex: 1;
+  min-width: 0;
+  text-align: center;
+  font-size: 14px;
+}
+.intervals input {
+  width: auto;
+  min-height: 0;
+}
+.intervals span {
+  display: block;
+}
+.form-grid input,
+.form-grid select {
+  width: 100%;
+}
+.timer {
+  font-variant-numeric: tabular-nums;
+}
+a {
+  overflow-wrap: anywhere;
+}
+button:disabled {
+  opacity: 0.5;
+}
+.timeline p {
+  overflow-wrap: anywhere;
+}
+.sub {
+  white-space: normal;
+}
+.actions {
+  flex-wrap: wrap;
+}
+#reminder {
+  padding: 16px;
+  background: #fff0d2;
+  color: #62400e;
+}
+@media (max-width: 400px) {
+  .panel {
+    padding: 16px;
+  }
+  .intervals {
+    gap: 2px;
+  }
+  .intervals label {
+    font-size: 13px;
+  }
+}

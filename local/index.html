@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>竿边 · 本机记录</title>
+    <link rel="stylesheet" href="../prototype/style.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="prototype-note">
+      本机 Web 记录 · 无账号/云备份 · 关闭页面后不提醒
+    </div>
+    <div class="app">
+      <aside>
+        <a class="brand" href="#home"
+          ><span class="brand-icon">竿</span
+          ><span>竿边<small>GANBIAN</small></span></a
+        >
+        <p class="nav-label">垂钓工作台</p>
+        <nav id="nav" aria-label="主导航"></nav>
+        <div class="aside-bottom">
+          仅本浏览器保存<small>请定期导出备份；清理浏览器数据会丢失记录</small>
+        </div>
+      </aside>
+      <div class="workspace">
+        <header>
+          <span>本机垂钓记录</span><a href="#settings">数据与能力</a>
+        </header>
+        <div id="error" role="alert" hidden></div>
+        <main id="main"><p>正在读取本机记录…</p></main>
+        <footer>竿边 / 留下每一次出钓的经验 <span>本机 Web v1</span></footer>
+      </div>
+    </div>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="./app.mjs"></script>
+  </body>
+</html>
