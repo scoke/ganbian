@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>竿边 · 页面原型</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="prototype-note">
+      交互原型 · 全部为模拟数据 · 刷新即重置，不用于实际出钓
+      <button id="reset">重置演示</button>
+    </div>
+    <div class="app">
+      <aside>
+        <a class="brand" href="#home"
+          ><span class="brand-icon">竿</span
+          ><span>竿边<small>GANBIAN</small></span></a
+        >
+        <p class="nav-label">垂钓工作台</p>
+        <nav id="nav" aria-label="主导航"></nav>
+        <div class="aside-bottom">
+          <span class="dot"></span> 本地演示模式<small
+            >不连接天气、通知或云端</small
+          >
+        </div>
+      </aside>
+      <div class="workspace">
+        <header>
+          <div>
+            <span class="breadcrumb">我的工作台</span><span id="crumb"></span>
+          </div>
+          <a href="#profile" class="avatar" aria-label="个人与设置">钓</a>
+        </header>
+        <main id="main"></main>
+        <footer>竿边 / 留下每一次出钓的经验 <span>原型 v0.1</span></footer>
+      </div>
+    </div>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
